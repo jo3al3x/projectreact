@@ -1,0 +1,54 @@
+# Project Review Documentation
+## Phone Fix Booking System
+
+### 1. Major Issues Faced
+
+#### AdvancedJS Component Management
+- **Component Overload Challenge**:
+  - Initially had all AdvancedJS features (chatbot, shop, discussion board, 3D models) in one large component
+  - Breaking these into separate, maintainable components was a significant challenge
+  - Each component had its own styling and functionality that needed to be preserved during separation
+
+#### Size and Layout Issues
+- **Component Sizing Challenges**:
+  - After splitting components, maintaining consistent sizes across different features became difficult
+  - Elements would sometimes overflow or break layout when separated into individual components
+  - Had to reconfigure CSS for each component individually after separation
+  - Mobile responsiveness needed to be rebuilt for each separated component
+
+#### CSS and Styling Management
+- **Style Conflicts**:
+  - Moving components into their own files created unexpected style conflicts
+  - Had to carefully manage CSS specificity to prevent styles from leaking between components
+  - Needed to restructure many CSS classes to work independently
+
+### 2. How Issues Were Addressed
+
+#### Component Separation Process
+- Created separate files for each major AdvancedJS feature
+- Carefully moved relevant CSS and JavaScript to each new component
+- Rebuilt component connections and dependencies
+- Added individual responsive design for each component
+
+#### Layout Solutions
+- Implemented more flexible CSS Grid and Flexbox layouts for each component
+- Created consistent sizing variables to maintain uniformity
+- Added overflow controls to prevent layout breaks
+
+### 3. Lessons Learned
+
+- Building multiple advanced features in separate components from the start would have been easier
+- Importance of modular CSS when working with multiple complex components
+- Value of consistent sizing approaches across different features
+- Need for careful planning when implementing multiple interactive features
+
+### 4. Future Improvements
+
+- Better organization of advanced features into separate components from the beginning
+- More consistent approach to component sizing
+- Better system for managing shared styles between components
+- More efficient way to handle component dependencies
+
+### 5. Reflections
+
+The biggest challenge was definitely managing all the AdvancedJS features. Starting with everything in one component made sense initially, but as the features grew more complex, separating them became increasingly difficult. The process of splitting these features into their own components while maintaining functionality and proper sizing was a valuable learning experience, though challenging. Future projects would benefit from a more modular approach from the start.
